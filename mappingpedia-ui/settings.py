@@ -11,11 +11,15 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-import dj_database_url
-from django.core.urlresolvers import reverse_lazy
+# import dj_database_url
+# from django.core.urlresolvers import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def ABS_DIR(rel):
+    return os.path.join(BASE_DIR, rel.replace('/', os.path.sep))
 
 
 # Quick-start development settings - unsuitable for production
@@ -128,3 +132,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT2 = ABS_DIR('mappingpedia-ui/static/')
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "mappingpedia-ui/static"),
+)

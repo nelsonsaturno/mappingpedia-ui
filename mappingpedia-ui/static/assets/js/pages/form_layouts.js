@@ -50,7 +50,7 @@ $(function() {
 
     // File input
     $(".file-styled").uniform({
-        fileButtonClass: 'action btn bg-pink-400'
+        fileButtonClass: 'action btn bg-grey-400'
     });
-    
+
 });

@@ -1,7 +1,8 @@
+    {% load static %}
     <!-- Main navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img style="height: 170%; width: 50%; margin-top: -3%;" src="{% static 'assets/images/logo_oeg.png' %}" alt=""></a>
 
             <ul class="nav navbar-nav visible-xs-block">
                 <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -13,7 +14,7 @@
             <ul class="nav navbar-nav">
                 <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
 
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="icon-git-compare"></i>
                         <span class="visible-xs-inline-block position-right">Git updates</span>
@@ -89,13 +90,13 @@
                             <a href="#" data-popup="tooltip" title="All activity"><i class="icon-menu display-block"></i></a>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
 
-            <p class="navbar-text"><span class="label bg-success">Online</span></p>
+            <!-- <p class="navbar-text"><span class="label bg-success">Online</span></p> -->
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown language-switch">
+            <ul class="nav navbar-nav navbar-right pull-right">
+                <!-- <li class="dropdown language-switch">
                     <a class="dropdown-toggle" data-toggle="dropdown">
                         <img src="assets/images/flags/gb.png" class="position-left" alt="">
                         English
@@ -200,19 +201,19 @@
                             <a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
                         </div>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="dropdown dropdown-user">
                     <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/images/placeholder.jpg" alt="">
-                        <span>Victoria</span>
+                        <img src="{% static 'assets/images/placeholder.jpg' %}" alt="">
+                        <span>Nelson</span>
                         <i class="caret"></i>
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
-                        <li><a href="#"><i class="icon-coins"></i> My balance</a></li>
-                        <li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+                        <!-- <li><a href="#"><i class="icon-coins"></i> My balance</a></li> -->
+                        <!-- <li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li> -->
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
                         <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>

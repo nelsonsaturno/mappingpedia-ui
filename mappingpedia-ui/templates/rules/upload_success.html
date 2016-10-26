@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="row">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h5 class="panel-title">Information</h5>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert bg-success alert-styled-left">
+                            <span class="text-semibold">Well done!</span> You successfully uploaded <a href="#" class="alert-link">your rdf file</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+{% block extra_script %}
+    <script type="text/javascript" src="{% static 'assets/js/plugins/forms/styling/uniform.min.js' %}"></script>
+{% endblock extra_script %}
