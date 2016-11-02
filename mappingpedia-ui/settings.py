@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sparql',
     'rules',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [

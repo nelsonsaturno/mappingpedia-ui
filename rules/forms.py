@@ -9,9 +9,14 @@ class UpdateRulesForm(forms.Form):
         label="Organization",
         help_text='Ex: Ontology Engineering Group'
     )
-    file = forms.FileField(label="Your file", help_text='No file selected.')
+    file = forms.FileField(
+        label="Your file", help_text='No file selected.',
+        widget=forms.FileInput(
+            attrs={'class': 'file-styled'},
+        )
+    )
     description = forms.CharField(
         label="Rules description",
-        widget=forms.Textarea,
+        widget=forms.Textarea(attrs={'rows': 4}),
         help_text='Enter your description here.'
     )
