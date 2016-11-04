@@ -15,7 +15,7 @@
         <div class="col-md-6 col-xs-12 col-sm-12">
 
             <!-- Basic layout-->
-            <form action="{% url 'upload_rules' %}" class="form form-horizontal" method="POST">
+            <form action="{% url 'upload_rules' %}" class="form form-horizontal" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="panel panel-flat">
                     <div class="panel-heading">

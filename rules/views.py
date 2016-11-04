@@ -19,7 +19,6 @@ class UploadRules(FormView):
         if form.is_valid():
             return HttpResponseRedirect(reverse_lazy('upload_success'))
         else:
-            print form
             return self.form_invalid(form)
 
 

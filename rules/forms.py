@@ -20,3 +20,7 @@ class UpdateRulesForm(forms.Form):
         widget=forms.Textarea(attrs={'rows': 4}),
         help_text='Enter your description here.'
     )
+
+
+class MorphParametersForm(forms.Form):
+    pass
